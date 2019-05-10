@@ -1,0 +1,37 @@
+/* Use System UI font everywhere */
+* {
+  font-family: system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+/* Make the window draggable */
+.aDd {
+  -webkit-app-region: drag;
+}
+
+/* Make room for window controls */
+.G-atb {
+  padding-left: 80px !important;
+}
+
+/* Use unstyled scrollbars */
+.SI .Tm {
+  overflow: hidden !important;
+}
+
+/* Push scrollable area down below header */
+.aeF {
+  margin-top: 48px !important;
+  overflow: auto;
+  height: calc(100% - 48px);
+}
+
+/* Remove the spacer element inside the scrollabe area */
+.nH.aBz > div:first-child:empty {
+  display: none;
+}
+
+/* Remove bottom shadow */
+.nH.aBz {
+  box-shadow: none !important;
+}

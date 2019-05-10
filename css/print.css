@@ -1,0 +1,31 @@
+/* Use System UI font everywhere */
+* {
+  font-family: system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+/* Use body to drag the window */
+body {
+  margin: 0;
+  -webkit-app-region: drag;
+  height: 100vh;
+}
+
+/* Make room for titlebar and scroll this container instead of body */
+.bodycontainer {
+  position: fixed;
+  top: 40px;
+  bottom: 0;
+  overflow: auto;
+}
+
+/* Hide logo and to: address */
+.bodycontainer > table:first-of-type,
+.bodycontainer > hr:first-of-type {
+  display: none;
+}
+
+/* Add padding */
+.maincontent {
+  padding: 0 20px;
+}

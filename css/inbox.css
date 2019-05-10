@@ -1,0 +1,346 @@
+/* Use System UI font everywhere */
+* {
+  font-family: system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+/* Make titlebar draggable and add room for traffic lights */
+header {
+  -webkit-app-region: drag;
+  padding-left: 64px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Round the corners of the quota gauge */
+.aeZ,
+.aeZ > div {
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+/* Drop the double border between panes to a single border */
+.apj {
+  border-right: none !important;
+}
+.aph {
+  border-bottom: none !important;
+}
+
+/* Use unstyled scroll bars */
+.age {
+  overflow-y: visible !important;
+}
+.age::-webkit-scrollbar {
+  width: 0 !important;
+}
+.age > *:first-child {
+  overflow-y: auto;
+  height: 100%;
+  width: auto !important;
+}
+
+/* ==================================================
+ * HEADER
+ */
+
+header {
+  background-color: #3f8bf4 !important;
+}
+
+header form {
+  background: #fff3 !important;
+  border-radius: 3px !important;
+}
+
+header input {
+  color: #fff !important;
+}
+header input::-webkit-input-placeholder {
+  color: #c1d8fb !important;
+}
+
+header svg {
+  color: #c1d8fb !important;
+}
+header button:hover svg {
+  background: none !important;
+  color: #fff !important;
+}
+
+/* Move burger menu */
+div.gb_Xb {
+  position: fixed;
+  top: 19px;
+  left: 10px;
+  background: none !important;
+}
+
+/* Hide Gmail logo */
+header a[href="#inbox"] {
+  display: none;
+}
+
+/* Hide the app switcher */
+#gbwa {
+  display: none !important;
+}
+
+/* Remove padding around profile photo so settings is better spaced */
+.gb_pc {
+  padding-left: 0px !important;
+}
+
+/* Hide company logo */
+header#gb .gb_fa {
+  width: 48px !important;
+  border: none !important;
+  background-color: transparent;
+  margin-left: 0px;
+}
+.gb_ga {
+  display: none !important;
+}
+
+/* Hide support button */
+div.zo {
+  display: none;
+}
+
+/* Remove extra right margin */
+div.G-atb {
+  margin-right: 0px !important;
+}
+
+/* Hide drop shadow on action bar */
+x.G-atb::before {
+  box-shadow: none !important;
+}
+
+/* SEARCH */
+
+#gb form {
+  max-width: none;
+  margin-top: 2px;
+  margin-right: 8px;
+  position: relative;
+  right: 0px;
+  border: none;
+  box-shadow: none;
+}
+
+/* Make search box transparent */
+#gb form:not(.gb_pe) {
+  background-color: transparent;
+}
+
+#gb .gssb_c {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#gb .gssb_e {
+  border: none;
+}
+
+/* Move filter form to be under search box */
+.ZF-Av {
+  left: auto !important;
+  right: 71px !important;
+  width: 31% !important;
+  min-width: 450px;
+}
+.ZF-Av > div {
+  border: 0px;
+}
+
+/* ==================================================
+ * SETTINGS
+ */
+
+/* Use native scrollbars */
+.aeJ.Tm {
+  overflow-y: visible;
+}
+.aeJ.Tm > *:first-child {
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* No shadow around richtext editor toolbars */
+div[role="toolbar"],
+.qK {
+  box-shadow: none !important;
+}
+
+/* Richtext editor content */
+div.Ar {
+  padding: 10px !important;
+}
+
+/* Custom select style */
+select {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 700;
+  color: #444;
+  line-height: 1.3;
+  padding: 0.5em 2em 0.5em 0.8em;
+  min-width: 4.2em;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='57' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M98 2.2A6 6 0 0 0 93.5.3H6.3a6 6 0 0 0-4.4 1.9A6 6 0 0 0 0 6.6 6 6 0 0 0 1.8 11l43.7 43.6a6 6 0 0 0 4.4 1.9 6 6 0 0 0 4.4-1.9L98 11a6 6 0 0 0 1.8-4.3 6 6 0 0 0-1.9-4.4z' fill='%23333' /%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+select:hover {
+  border-color: #888;
+}
+
+select:focus {
+  border-color: #aaa;
+  /* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+/* Set options to normal weight */
+select option {
+  font-weight: normal;
+}
+
+/* Let header span the full width */
+.v .fY {
+  margin: 0 !important;
+}
+
+/* Hide side panel */
+.bAw {
+  display: none;
+}
+
+/* Hide footer */
+.apO {
+  display: none;
+}
+
+/* Dark sidebar */
+.oo {
+  background: #1f2329;
+}
+
+.oo .TO:not(.NQ):not(.nZ):not(.TN):not(.ol),
+.oo .ah9.aiu:not(:hover),
+.oo .CL:not(:hover),
+.oo span[role="button"] {
+  filter: invert(100%);
+}
+.oo .TO:not(.NQ):not(.nZ):not(.TN):not(.ol) .bsU,
+.oo .ah9.aiu:not(:hover) .bsU {
+  filter: invert(100%);
+}
+
+/* Compose */
+.z0 {
+  padding-left: 14px !important;
+}
+.z0 > .L3,
+.z0 > .L3::before {
+  min-width: 44px !important;
+}
+.bhZ:not(.bym) .z0 > .L3 {
+  width: 44px !important;
+  height: 44px !important;
+}
+div.z0 > .L3 {
+  padding: 0 16px 0 0;
+}
+
+/* ==================================================
+ * INBOX
+ */
+
+/* Dim the Snoozed N days ago text in the inbox */
+.zA .cL {
+  font-weight: normal;
+  opacity: 0.8;
+}
+.zA.yO .cL {
+  opacity: 0.4;
+}
+
+/* Less shadow on items on hover */
+.zA:hover {
+  box-shadow: inset 1px 0 0 #dadce0, 0 1px 2px 0 rgba(60, 64, 67, 0.15) !important;
+}
+
+/* Dim Default Inbox category tabs */
+.aKh {
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in 0s;
+  border-radius: 8px 8px 0 0;
+}
+.aKh:hover {
+  opacity: 1;
+}
+
+/* Further dim the non-active category tab */
+.aKh .aAy[aria-selected="false"] {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in 0s;
+}
+.aKh .aAy[aria-selected="false"]:hover,
+.aKh .aAy[aria-selected="true"] {
+  opacity: 1;
+}
+
+/* Make "new" badges on tabs grayscale */
+.aKh .aDG {
+  filter: grayscale(100%);
+}
+
+/* Hide ads in top of inbox tabs */
+.aKB {
+  display: none;
+}
+
+/* Dim attachment type icons on read messages */
+div[gh="tl"] tr.yO img.brf {
+  opacity: 0.6;
+}
+
+/* Hide underlines on category tabs in default inbox */
+div[role="main"] .J-KU-KO.aAy:before {
+  background-color: transparent !important;
+}
+
+/* ==================================================
+ * ACCOUNT
+ */
+
+/* Use header to drag the window */
+.JYXKFb {
+  -webkit-app-region: drag;
+}
+
+/* Add more space to the footer */
+.zOB73 {
+  height: 54px !important;
+}
+.zOB73 select {
+  height: auto !important;
+}
+.zOB73 img {
+  vertical-align: middle !important;
+  margin-right: 1em;
+}
+.SEK88d {
+  display: flex;
+  align-items: center;
+}
