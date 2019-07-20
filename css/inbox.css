@@ -91,13 +91,14 @@ header a[href="#inbox"] {
 }
 
 /* Hide company logo */
-header#gb .gb_fa {
+header#gb .gb_ha {
   width: 48px !important;
   border: none !important;
+  box-shadow: none !important;
   background-color: transparent;
   margin-left: 0px;
 }
-.gb_ga {
+.gb_ia {
   display: none !important;
 }
 
@@ -231,8 +232,8 @@ select option {
 }
 
 /* Dark sidebar */
-.oo {
-  background: #1f2329;
+.aeN {
+  background: #1f2329 !important;
 }
 
 .oo .TO:not(.NQ):not(.nZ):not(.TN):not(.ol),
